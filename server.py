@@ -3,7 +3,7 @@
 #author: Lam Ngo
 
 import os
-import aiy.audio
+import aiy.au
 import aiy.cloudspeech
 import aiy.voicehat
 import time
@@ -32,7 +32,7 @@ def main():
         text = recognizer.recognize()
 
         print (text)
-        
+
         if text is None:
             print ("Nothing")
             led.set_state(aiy.voicehat.LED.OFF)
